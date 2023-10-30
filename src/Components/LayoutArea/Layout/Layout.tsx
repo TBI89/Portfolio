@@ -20,7 +20,7 @@ function Layout(): JSX.Element {
             </header>
 
             <main>
-                <Routing />
+                {/* <Routing /> */}
                 <ProjectList />
                 <Contact />
             </main>
