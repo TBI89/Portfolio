@@ -1,0 +1,9 @@
+html, body, #root {
+    height: 100vh;
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
