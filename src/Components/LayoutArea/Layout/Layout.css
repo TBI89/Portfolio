@@ -1,14 +1,13 @@
 .Layout {
     height: 100vh;
     display: grid;
-    grid-template-rows: 9% 86% 5%;
+    grid-template-rows: 9% auto 5%;
     grid-template-columns: repeat(20, 1fr);
 }
 
 .Layout>nav,
 footer {
     grid-column: span 20;
-    overflow: auto;
 }
 
 .Layout>header {

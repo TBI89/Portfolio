@@ -21,7 +21,7 @@ function Header(): JSX.Element {
                 const randomContentInterval = setInterval(() => { // Start displaying the random content.
                     const randomIndex = Math.floor(Math.random() * content.length);
                     setRandomContentState(content[randomIndex]);
-                }, 2000);
+                }, 1500);
                 return () => clearInterval(randomContentInterval);
             }
         }, 75);

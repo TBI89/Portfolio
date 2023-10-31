@@ -1,3 +1,20 @@
 .ProjectCard {
-	
+    position: relative;
+}
+
+.ProjectCard>.ProjectLink>.ProjectInfoContainer {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 10px;
+    color:blue;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ProjectCard>.ProjectLink>.ProjectImageContainer>.ProjectImage {
+    width: 550px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px;
 }

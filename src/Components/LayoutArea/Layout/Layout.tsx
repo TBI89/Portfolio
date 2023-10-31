@@ -1,3 +1,4 @@
+import About from "../../AboutArea/About/About";
 import Contact from "../../AboutArea/Contact/Contact";
 import Resume from "../../AboutArea/Resume/Resume";
 import ProjectList from "../../ProjectArea/ProjectList/ProjectList";
@@ -22,6 +23,7 @@ function Layout(): JSX.Element {
             <main>
                 {/* <Routing /> */}
                 <ProjectList />
+                <About />
                 <Contact />
             </main>
 

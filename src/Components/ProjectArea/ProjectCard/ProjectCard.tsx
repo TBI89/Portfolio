@@ -1,9 +1,27 @@
+import ProjectModel from "../../../Models/ProjectModel";
 import "./ProjectCard.css";
 
-function ProjectCard(): JSX.Element {
+interface ProjectCardProps {
+    project: ProjectModel
+}
+
+function ProjectCard(props: ProjectCardProps): JSX.Element {
+
     return (
         <div className="ProjectCard">
-			<h2>ProjectCard Page</h2>
+
+            <a className="ProjectLink" href={props.project.url} target="_blank">
+                <div className="ProjectInfoContainer">
+                    <span className="ProjectPropPlaceholder">{props.project.id}</span>
+                    <br />
+                    <span className="ProjectPropPlaceholder">{props.project.name}</span>
+                </div>
+
+                <div className="ProjectImageContainer">
+                    <img className="ProjectImage" src={props.project.imageName} />
+                </div>
+            </a>
+
         </div>
     );
 }
