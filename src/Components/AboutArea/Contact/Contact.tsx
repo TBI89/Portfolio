@@ -13,14 +13,14 @@ function Contact(): JSX.Element {
 
             <h3>Lets Get In Touch</h3>
 
-            <div className="socialLinks">
+            <div className="SocialLinks">
                 <a href={"https://www.linkedin.com/in/tomer-ben-israel"}
-                    target="_blank"><LinkedInIcon /></a>
+                    target="_blank"><LinkedInIcon /> in/tomer-ben-israel</a>
                 <a href={"https://github.com/TBI89"}
-                    target="_blank"><GitHubIcon /></a>
-                <a href={"mailto:tomerben89@mgail.com"}><EmailIcon /></a>
+                    target="_blank"><GitHubIcon /> github.com/TBI89</a>
+                <a href={"mailto:tomerben89@mgail.com"}><EmailIcon /> tomerben89@mgail.com</a>
                 <a href={`https://wa.me/${phoneNumber}?text=${message}`}
-                    target="_blank" rel="noopener noreferrer"><WhatsAppIcon /></a>
+                    target="_blank" rel="noopener noreferrer"><WhatsAppIcon /> 050-4763633</a>
             </div>
 
         </div>

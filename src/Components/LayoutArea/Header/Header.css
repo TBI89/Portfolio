@@ -4,5 +4,7 @@
 }
 
 .Header>h1 {
-    font-size: xx-large;
+    /* font-size: xx-large; */
+    color: white;
+   font-style: oblique;
 }

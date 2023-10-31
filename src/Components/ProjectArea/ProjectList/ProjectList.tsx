@@ -16,7 +16,7 @@ function ProjectList(): JSX.Element {
 
     return (
         <div className="ProjectList">
-            <h2>Projects</h2>
+            <h2>My Work</h2>
             {projects.map(p => <ProjectCard key={p.id} project={p} />)}
         </div>
     );

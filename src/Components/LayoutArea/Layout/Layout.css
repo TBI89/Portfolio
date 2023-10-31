@@ -18,9 +18,9 @@ footer {
     grid-column: span 15;
 }
 
-.Layout>aside {
+.Layout > aside {
     grid-column: span 1;
-    position: absolute;
+    position: fixed;
     top: 50%;
     right: 0;
 }

@@ -1,3 +1,5 @@
-.ProjectList {
-	
+.ProjectList>h2 {
+    color: white;
+    font-style: oblique;
+    margin-top: 100px;
 }

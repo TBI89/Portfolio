@@ -1,3 +1,8 @@
 .About {
     margin: 30px;
 }
+
+.About>h2 {
+    color: white;
+    font-style: oblique;
+}

@@ -1,9 +1,10 @@
 import "./Resume.css";
+import DownloadIcon from '@mui/icons-material/Download';
 
 function Resume(): JSX.Element {
     return (
         <div className="Resume">
-			Resume
+            <button className="ResumeButton">Resume <DownloadIcon className="DownloadIcon" /></button>
         </div>
     );
 }
