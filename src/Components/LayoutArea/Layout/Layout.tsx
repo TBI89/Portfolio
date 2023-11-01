@@ -1,4 +1,4 @@
-import { RefObject, useRef } from "react";
+import React, { useRef } from "react";
 import About from "../../AboutArea/About/About";
 import Contact from "../../AboutArea/Contact/Contact";
 import Resume from "../../AboutArea/Resume/Resume";
@@ -10,36 +10,36 @@ import "./Layout.css";
 
 function Layout(): JSX.Element {
 
-    // Section refs:
-    const headerRef: RefObject<HTMLDivElement> = useRef(null);
-    const projectListRef: RefObject<HTMLDivElement> = useRef(null);
-    const aboutRef: RefObject<HTMLDivElement> = useRef(null);
-    const contactRef: RefObject<HTMLDivElement> = useRef(null);
+    // Refs for scrolling sections
+    const headerRef = useRef<HTMLDivElement>(null);
+    const projectListRef = useRef<HTMLDivElement>(null);
+    const aboutRef = useRef<HTMLDivElement>(null);
+    const contactRef = useRef<HTMLDivElement>(null);
 
     // Scrolling cases:
-    function scrollToHeader() {
+    const scrollToHeader = () => {
         if (headerRef.current) {
             headerRef.current.scrollIntoView({ behavior: "smooth" });
         }
-    }
+    };
 
-    function scrollToProjectList() {
+    const scrollToProjectList = () => {
         if (projectListRef.current) {
             projectListRef.current.scrollIntoView({ behavior: "smooth" });
         }
-    }
+    };
 
-    function scrollToAbout() {
+    const scrollToAbout = () => {
         if (aboutRef.current) {
             aboutRef.current.scrollIntoView({ behavior: "smooth" });
         }
-    }
+    };
 
-    function scrollToContact() {
+    const scrollToContact = () => {
         if (contactRef.current) {
             contactRef.current.scrollIntoView({ behavior: "smooth" });
         }
-    }
+    };
 
     return (
         <div className="Layout">
@@ -54,13 +54,21 @@ function Layout(): JSX.Element {
             </nav>
 
             <header>
-                <Header />
+                <div ref={headerRef}>
+                    <Header />
+                </div>
             </header>
 
             <main>
-                <ProjectList />
-                <About />
-                <Contact />
+                <div ref={projectListRef}>
+                    <ProjectList />
+                </div>
+                <div ref={aboutRef}>
+                    <About />
+                </div>
+                <div ref={contactRef}>
+                    <Contact />
+                </div>
             </main>
 
             <aside>
