@@ -1,10 +1,11 @@
+import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import "./Contact.css";
 function Contact(): JSX.Element {
 
+    // Init phone & message for the whatsapp link:
     const phoneNumber = "0504763633";
     const message = "Hello, I am interested in contacting you.";
 

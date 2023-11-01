@@ -1,7 +1,7 @@
 .Layout {
     height: 100vh;
     display: grid;
-    grid-template-rows: 9% auto 5%;
+    grid-template-rows: 10% 85% 5%;
     grid-template-columns: repeat(20, 1fr);
 }
 

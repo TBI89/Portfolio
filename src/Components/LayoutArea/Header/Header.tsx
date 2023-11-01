@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Header.css";
 
 function Header(): JSX.Element {
-    
+
     const [displayedText, setDisplayedText] = useState<string>(""); // State for typing effect
     const [randomContentState, setRandomContentState] = useState<string>(""); // State for random content
 

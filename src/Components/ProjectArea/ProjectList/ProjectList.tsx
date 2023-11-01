@@ -1,5 +1,5 @@
-import smartInvestingProjectImage from "../../../Assets/Images/smart-investing-project-image.png";
 import flyAwayProjectImage from "../../../Assets/Images/fly-away-project-image.png";
+import smartInvestingProjectImage from "../../../Assets/Images/smart-investing-project-image.png";
 import tranzuzProjectImage from "../../../Assets/Images/tranzuz-project-image.png";
 import ProjectModel from "../../../Models/ProjectModel";
 import ProjectCard from "../ProjectCard/ProjectCard";
