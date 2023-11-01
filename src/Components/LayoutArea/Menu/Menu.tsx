@@ -1,3 +1,5 @@
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Menu.css';
 
@@ -9,11 +11,32 @@ interface MenuProps {
 }
 
 function Menu(props: MenuProps): JSX.Element {
+
+    // Local state to the appearance of the ScrollToTopContainer:
+    const [displayScrollIcon, setDisplayScrollIcon] = useState(false);
+
+    // Handle user top scrolling:
+    useEffect(() => {
+
+        function handleUserScrolling() {
+            const scrollY = window.scrollY;
+            console.log("Scroll position: ", scrollY);
+            setDisplayScrollIcon(scrollY < 0);
+        }
+
+        handleUserScrolling();
+
+        window.addEventListener("scroll", handleUserScrolling);
+
+        return () => {
+            window.removeEventListener("scroll", handleUserScrolling);
+        };
+    }, [window.scrollY]);
+
     return (
         <div className="Menu">
             <nav className="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/header" onClick={props.scrollToHeader}>TBI</NavLink>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
@@ -29,6 +52,10 @@ function Menu(props: MenuProps): JSX.Element {
                     </div>
                 </div>
             </nav>
+
+            <div className={`ScrollToTopContainer ${displayScrollIcon ? 'visible' : 'hidden'}`}>
+                <NavLink className="navbar-brand" to="/header" onClick={props.scrollToHeader}><ArrowUpwardIcon /></NavLink>
+            </div>
         </div>
     );
 }
