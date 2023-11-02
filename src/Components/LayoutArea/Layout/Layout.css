@@ -3,6 +3,7 @@
     display: grid;
     grid-template-rows: 10% auto 5%;
     grid-template-columns: repeat(20, 1fr);
+    overflow-x: hidden;
 }
 
 .Layout>nav,

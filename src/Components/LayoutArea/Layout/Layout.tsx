@@ -66,9 +66,9 @@ function Layout(): JSX.Element {
                 <div ref={aboutRef}>
                     <About />
                 </div>
-                <div ref={contactRef}>
+                {/* <div ref={contactRef}>
                     <Contact />
-                </div>
+                </div> */}
             </main>
 
             <aside>
@@ -76,6 +76,9 @@ function Layout(): JSX.Element {
             </aside>
 
             <footer>
+                <div ref={contactRef}>
+                    <Contact />
+                </div>
                 <Footer />
             </footer>
 

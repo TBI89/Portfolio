@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Header.css";
 
 function Header(): JSX.Element {
@@ -7,8 +7,8 @@ function Header(): JSX.Element {
     const [randomContentState, setRandomContentState] = useState<string>(""); // State for random content
 
     // Initial content for typing effect
-    const initialContent = "Hi, I'm Tomer. I'm super passionate about ";
-    const content = ["web development.", "creating top-notch apps.", "expanding my tech stack."];
+    const initialContent = "Hi, I'm Tomer. I'm super passionate about...";
+    const content = ["web development", "creating top-notch apps", "expanding my tech stack"];
 
     useEffect(() => {
         let index = 0;
@@ -33,7 +33,12 @@ function Header(): JSX.Element {
 
     return (
         <div className="Header">
-            <h1>{displayedText}<br />{randomContentState}</h1>
+            <div className="InitialContent">
+                <h1>{displayedText}</h1>
+            </div>
+            <div className="RandomContent">
+                <h1>{randomContentState}</h1>
+            </div>
         </div>
     );
 }

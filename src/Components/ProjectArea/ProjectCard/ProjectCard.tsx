@@ -9,7 +9,6 @@ function ProjectCard(props: ProjectCardProps): JSX.Element {
 
     return (
         <div className="ProjectCard">
-
             <a className="ProjectLink" href={props.project.url} target="_blank">
                 <div className="ProjectInfoContainer">
                     <span className="ProjectPropPlaceholder">{props.project.id}</span>
@@ -21,7 +20,6 @@ function ProjectCard(props: ProjectCardProps): JSX.Element {
                     <img className="ProjectImage" src={props.project.imageName} />
                 </div>
             </a>
-
         </div>
     );
 }

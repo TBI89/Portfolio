@@ -1,15 +1,22 @@
 .ProjectCard {
     position: relative;
+    width: 550px;
+    margin: 0 0 30px;
+    transition: transform 0.5s ease;
+}
+
+.ProjectCard:hover {
+    transform:scale(1.1);
 }
 
 .ProjectCard>.ProjectLink>.ProjectInfoContainer {
     position: absolute;
-    margin-left: 300px;
+    margin-left: 15px;
     margin-top: 10px;
-    color:blue;
+    color: gray;
     text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: large;
+    font-weight: bolder;
 }
 
 .ProjectCard>.ProjectLink>.ProjectImageContainer>.ProjectImage {
