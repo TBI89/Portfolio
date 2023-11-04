@@ -20,7 +20,6 @@ function Menu(props: MenuProps): JSX.Element {
 
         function handleUserScrolling() {
             const scrollY = window.scrollY;
-            console.log("Scroll position: ", scrollY);
             setDisplayScrollIcon(scrollY < 0);
         }
 
