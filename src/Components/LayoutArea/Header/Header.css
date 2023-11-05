@@ -1,13 +1,3 @@
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 .Header {
     white-space: nowrap;
     text-align: left;
@@ -18,10 +8,25 @@
 .Header>.RandomContent>h1 {
     color: white;
     font-style: oblique;
-    animation: fadeIn 1s ease-in-out;
 }
 
 .Header>.InitialContent>h1 {
     color: white;
     font-style: oblique;
+}
+
+@keyframes headerAnimation {
+    from {
+        opacity: 0.25;
+        transform: translateX(-100%) scale(0.75);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.randomContentAnimation {
+    animation: headerAnimation 1.5s ease;
 }

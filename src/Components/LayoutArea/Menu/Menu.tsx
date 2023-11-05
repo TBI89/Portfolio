@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './Menu.css';
 
 interface MenuProps {
-    scrollToHeader: () => void;
+    scrollToMenu: () => void;
     scrollToProjectList: () => void;
     scrollToAbout: () => void;
     scrollToContact: () => void;
@@ -13,24 +13,23 @@ interface MenuProps {
 function Menu(props: MenuProps): JSX.Element {
 
     // Local state to the appearance of the ScrollToTopContainer:
-    const [displayScrollIcon, setDisplayScrollIcon] = useState(false);
+    const [displayScrollIcon, setDisplayScrollIcon] = useState(false);    
 
     // Handle user top scrolling:
     useEffect(() => {
-
+        
         function handleUserScrolling() {
             const scrollY = window.scrollY;
-            setDisplayScrollIcon(scrollY < 0);
+            setDisplayScrollIcon(scrollY > 500);
         }
 
-        handleUserScrolling();
-
         window.addEventListener("scroll", handleUserScrolling);
-
+        
         return () => {
             window.removeEventListener("scroll", handleUserScrolling);
         };
-    }, [window.scrollY]);
+
+    }, []);
 
     return (
         <div className="Menu">
@@ -53,7 +52,7 @@ function Menu(props: MenuProps): JSX.Element {
             </nav>
 
             <div className={`ScrollToTopContainer ${displayScrollIcon ? 'visible' : 'hidden'}`}>
-                <NavLink className="navbar-brand" to="/header" onClick={props.scrollToHeader}><ArrowUpwardIcon /></NavLink>
+                <NavLink className="navbar-brand" to="/header" onClick={props.scrollToMenu}><ArrowUpwardIcon /></NavLink>
             </div>
         </div>
     );

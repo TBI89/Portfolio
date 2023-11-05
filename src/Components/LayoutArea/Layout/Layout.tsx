@@ -10,17 +10,14 @@ import "./Layout.css";
 
 function Layout(): JSX.Element {
 
-    // Local state for layout scrolling animations:
+    // Local state for layout scrolling animation:
     const [fadeIn, setIsFadeIn] = useState(false);
     const scrollY = useRef(0);
 
     // Handle user viewport position to trigger animation:
     function handleUserScrolling() {
 
-        console.log("Scrolling....");
-
         scrollY.current = window.scrollY;
-
         const element = projectListRef.current;
 
         if (element) {
@@ -30,23 +27,16 @@ function Layout(): JSX.Element {
 
             if (windowPosition > elementPosition && scrollY.current < elementPosition + elementHeight) {
                 setIsFadeIn(true);
-                console.log("fade in = true");
             }
             else {
                 setIsFadeIn(false);
-                console.log("fade in = false");
             }
         }
     }
 
     // Add event listener when the component mounts & remove when the component destroys:
     useEffect(() => {
-
-        console.log("useEffect started...");
-        
         window.addEventListener("scroll", handleUserScrolling);
-        console.log("Event listener added...");
-        console.log("Scroll position", window.scrollY);
 
         return () => {
             window.removeEventListener("scroll", handleUserScrolling);
@@ -55,15 +45,15 @@ function Layout(): JSX.Element {
     }, []);
 
     // Refs for scrolling sections
-    const headerRef = useRef<HTMLDivElement>(null);
+    const menuRef = useRef<HTMLDivElement>(null);
     const projectListRef = useRef<HTMLDivElement>(null);
     const aboutRef = useRef<HTMLDivElement>(null);
     const contactRef = useRef<HTMLDivElement>(null);
 
     // Scrolling cases:
-    const scrollToHeader = () => {
-        if (headerRef.current) {
-            headerRef.current.scrollIntoView({ behavior: "smooth" });
+    const scrollToMenu = () => {
+        if (menuRef.current) {
+            menuRef.current.scrollIntoView({ behavior: "smooth" });
         }
     };
 
@@ -88,9 +78,9 @@ function Layout(): JSX.Element {
     return (
         <div className="Layout">
 
-            <nav>
+            <nav  ref={menuRef}>
                 <Menu
-                    scrollToHeader={scrollToHeader}
+                    scrollToMenu={scrollToMenu}
                     scrollToProjectList={scrollToProjectList}
                     scrollToAbout={scrollToAbout}
                     scrollToContact={scrollToContact}
@@ -98,16 +88,16 @@ function Layout(): JSX.Element {
             </nav>
 
             <header>
-                <div ref={headerRef}>
+                <div>
                     <Header />
                 </div>
             </header>
 
             <main>
-                <div className={`LayoutProjectList ${fadeIn ? "fadeIn" : ""}`} ref={projectListRef}>
+                <div className={`${fadeIn ? "fadeIn" : ""}`} ref={projectListRef}>
                     <ProjectList />
                 </div>
-                <div ref={aboutRef}>
+                <div>
                     <About />
                 </div>
             </main>
