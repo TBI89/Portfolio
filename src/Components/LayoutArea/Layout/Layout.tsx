@@ -16,8 +16,9 @@ function Layout(): JSX.Element {
 
     // Handle user viewport position to trigger animation:
     function handleUserScrolling() {
-
+        
         scrollY.current = window.scrollY;
+        
         const element = projectListRef.current;
 
         if (element) {
@@ -26,7 +27,7 @@ function Layout(): JSX.Element {
             const windowPosition = scrollY.current + window.innerHeight;
 
             if (windowPosition > elementPosition && scrollY.current < elementPosition + elementHeight) {
-                setIsFadeIn(true);
+                setIsFadeIn(true);    
             }
             else {
                 setIsFadeIn(false);
@@ -40,7 +41,6 @@ function Layout(): JSX.Element {
 
         return () => {
             window.removeEventListener("scroll", handleUserScrolling);
-            console.log("Event listener removed...");
         }
     }, []);
 
@@ -97,7 +97,7 @@ function Layout(): JSX.Element {
                 <div className={`${fadeIn ? "fadeIn" : ""}`} ref={projectListRef}>
                     <ProjectList />
                 </div>
-                <div>
+                <div ref={aboutRef}>
                     <About />
                 </div>
             </main>

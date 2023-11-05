@@ -41,3 +41,37 @@ footer {
         transform: scale(1);
     }
 }
+
+@media (max-width: 767px) {
+
+    /* * {
+        border: 1px solid red;
+    } */
+
+    .Layout {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 10% auto auto 5%;
+        grid-template-columns: 1fr;
+    }
+
+    .Layout>nav {
+        display: flex;
+    }
+
+    .Layout>header {
+        grid-row: 1;
+        display: flex;
+        justify-content: right;
+        margin-right: -270px;
+    }
+
+    /* 
+    .Layout>aside {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    } */
+
+}
