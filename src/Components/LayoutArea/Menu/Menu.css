@@ -3,7 +3,7 @@
     font-weight: bold;
 }
 
-.Menu > .ScrollToTopContainer {
+.Menu>.ScrollToTopContainer {
     width: 60px;
     border-radius: 20px;
     color: white;
@@ -15,6 +15,13 @@
     transition: opacity 0.3s ease;
 }
 
-.Menu > .ScrollToTopContainer.visible {
+.Menu>.ScrollToTopContainer.visible {
     opacity: 1;
+}
+
+@media (max-width: 767px) {
+
+    .Menu>.ScrollToTopContainer {
+      margin-right: 40px;
+    }
 }

@@ -3,7 +3,7 @@
 }
 
 .Contact>.SocialLinks {
-margin-right: auto;
+    margin-right: auto;
 }
 
 .Contact>.SocialLinks>a {
@@ -21,4 +21,19 @@ margin-right: auto;
     margin-bottom: 20px;
     color: white;
     font-style: oblique;
+}
+
+@media (max-width: 767px) {
+
+    .Contact>.SocialLinks>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 120px;
+        margin-bottom: 10px;
+    }
+
+    .Contact>h3 {
+        margin-right: 120px;
+    }
 }

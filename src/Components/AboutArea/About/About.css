@@ -1,9 +1,22 @@
 .About>img {
-margin: 0 70px 0 0;
+    margin: 0 70px 0 0;
 }
 
 .About>h2 {
-   text-align: left;
+    text-align: left;
     color: white;
     font-style: oblique;
+}
+
+@media (max-width: 767px) {
+
+    .About>img {
+        max-width: 65%;
+        margin-left: -50px;
+    }
+
+    .About>h2 {
+        margin-left: 80px;
+        margin-top: 50px;
+    }
 }

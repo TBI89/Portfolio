@@ -13,18 +13,18 @@ interface MenuProps {
 function Menu(props: MenuProps): JSX.Element {
 
     // Local state to the appearance of the ScrollToTopContainer:
-    const [displayScrollIcon, setDisplayScrollIcon] = useState(false);    
+    const [displayScrollIcon, setDisplayScrollIcon] = useState(false);
 
     // Handle user top scrolling:
     useEffect(() => {
-        
+
         function handleUserScrolling() {
             const scrollY = window.scrollY;
             setDisplayScrollIcon(scrollY > 500);
         }
 
         window.addEventListener("scroll", handleUserScrolling);
-        
+
         return () => {
             window.removeEventListener("scroll", handleUserScrolling);
         };
@@ -35,6 +35,9 @@ function Menu(props: MenuProps): JSX.Element {
         <div className="Menu">
             <nav className="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                 <div className="container-fluid">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">

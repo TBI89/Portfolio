@@ -5,6 +5,12 @@
     padding-top: 30px;
 }
 
+@media (max-width: 767px) {
+    .Header {
+        white-space: initial;
+    }
+}
+
 .Header>.RandomContent>h1 {
     color: white;
     font-style: oblique;

@@ -4,3 +4,14 @@
     font-style: oblique;
     margin-top: 650px;
 }
+
+@media (max-width: 767px) {
+
+    .ProjectList>h2 {
+        margin-left: 200px;
+    }
+
+    .ProjectList {
+        margin-left: -110px;
+    }
+}
