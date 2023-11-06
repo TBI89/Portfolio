@@ -20,7 +20,7 @@ footer {
 
 .Layout>aside {
     grid-column: span 1;
-    position: absolute;
+    position: fixed;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -55,11 +55,5 @@ footer {
     .Layout>aside,
     .Layout>main {
         grid-column: span 1;
-    }
-
-    .Layout>header {
-        position: absolute;
-        top: 5%;
-        left: -100%;
     }
 }

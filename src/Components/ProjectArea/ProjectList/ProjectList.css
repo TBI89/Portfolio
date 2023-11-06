@@ -9,6 +9,7 @@
 
     .ProjectList>h2 {
         margin-left: 200px;
+        max-width: 150px;
     }
 
     .ProjectList {

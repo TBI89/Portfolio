@@ -11,14 +11,14 @@
     border: none;
     border-radius: 10px;
     transition: all 0.5s ease;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .Resume .ResumeButton:hover {
     background-color: green;
-    transform: rotate(-90deg) scale(1.2); 
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); 
+    transform: rotate(-90deg) scale(1.2);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
