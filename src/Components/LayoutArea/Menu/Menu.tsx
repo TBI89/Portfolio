@@ -33,6 +33,7 @@ function Menu(props: MenuProps): JSX.Element {
 
     return (
         <div className="Menu">
+
             <nav className="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -57,6 +58,7 @@ function Menu(props: MenuProps): JSX.Element {
             <div className={`ScrollToTopContainer ${displayScrollIcon ? 'visible' : 'hidden'}`}>
                 <NavLink className="navbar-brand" to="/header" onClick={props.scrollToMenu}><ArrowUpwardIcon /></NavLink>
             </div>
+
         </div>
     );
 }

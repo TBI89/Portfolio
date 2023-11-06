@@ -6,7 +6,7 @@ import "./Contact.css";
 function Contact(): JSX.Element {
 
     // Init phone & message for the whatsapp link:
-    const phoneNumber = "0504763633";
+    const phoneNumber = "+9720504763633";
     const message = "Hello, I am interested in contacting you.";
 
     return (

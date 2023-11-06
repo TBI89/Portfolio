@@ -3,7 +3,6 @@ body,
 #root {
     height: 100vh;
     text-align: center;
-    background-color: #221e22;
     background-image: url(/src/Assets/Images/background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;

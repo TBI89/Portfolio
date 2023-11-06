@@ -21,10 +21,6 @@
 
 @media (max-width: 767px) {
 
-    .Menu>* {
-        max-width: 200px;
-    }
-
     .Menu>.ScrollToTopContainer {
         margin-right: 40px;
     }
