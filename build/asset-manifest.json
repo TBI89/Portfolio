@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.e6647691.css",
+    "main.js": "/Portfolio/static/js/main.cc3db9be.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/background-image.jpg": "/Portfolio/static/media/background-image.799427d448d02893f20f.jpg",
+    "static/media/fly-away-project-image.png": "/Portfolio/static/media/fly-away-project-image.786882eae99e2ccadd20.png",
+    "static/media/smart-investing-project-image.png": "/Portfolio/static/media/smart-investing-project-image.ac9fe2209f3da65447cb.png",
+    "static/media/tranzuz-project-image.png": "/Portfolio/static/media/tranzuz-project-image.6cb2c02c3895eafd7846.png",
+    "static/media/about-image.png": "/Portfolio/static/media/about-image.ce10dadacdd49630ee25.png",
+    "index.html": "/Portfolio/index.html",
+    "main.e6647691.css.map": "/Portfolio/static/css/main.e6647691.css.map",
+    "main.cc3db9be.js.map": "/Portfolio/static/js/main.cc3db9be.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6647691.css",
+    "static/js/main.cc3db9be.js"
+  ]
+}
