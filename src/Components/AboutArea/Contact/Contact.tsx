@@ -16,12 +16,12 @@ function Contact(): JSX.Element {
 
             <div className="SocialLinks">
                 <a href={"https://www.linkedin.com/in/tomer-ben-israel"}
-                    target="_blank"><LinkedInIcon /> in/tomer-ben-israel</a>
+                    target="_blank" rel="noreferrer"><LinkedInIcon /> in/tomer-ben-israel</a>
                 <a href={"https://github.com/TBI89"}
-                    target="_blank"><GitHubIcon /> github.com/TBI89</a>
-                <a href={"mailto:tomerben89@mgail.com"}><EmailIcon /> tomerben89@mgail.com</a>
+                    target="_blank" rel="noreferrer"><GitHubIcon /> github.com/TBI89</a>
+                <a href={"mailto:tomerben89@gmail.com"}><EmailIcon /> tomerben89@mgail.com</a>
                 <a href={`https://wa.me/${phoneNumber}?text=${message}`}
-                    target="_blank" rel="noopener noreferrer"><WhatsAppIcon /> 050-4763633</a>
+                    target="_blank" rel="noreferrer"><WhatsAppIcon /> 050-4763633</a>
             </div>
 
         </div>

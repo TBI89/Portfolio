@@ -21,37 +21,37 @@ function About(): JSX.Element {
             <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={reactIcon} className="rounded-circle" width="100px" height="90"/>
+                        <img src={reactIcon} alt="skill-item" className="rounded-circle" width="100px" height="90" />
                     </div>
                     <div className="carousel-item">
-                        <img src={nodeIcon} className="rounded-circle" width="100px" height="90"/>
+                        <img src={nodeIcon} alt="skill-item" className="rounded-circle" width="100px" height="90" />
                     </div>
                     <div className="carousel-item">
-                        <img src={mongoIcon} className="rounded-circle" width="100px" height="90"/>
+                        <img src={mongoIcon} alt="skill-item" className="rounded-circle" width="100px" height="90" />
                     </div>
                     <div className="carousel-item">
-                        <img src={sqlIcon} className="rounded-circle" width="100px" height="90"/>
+                        <img src={sqlIcon} alt="skill-item" className="rounded-circle" width="100px" height="90" />
                     </div>
                     <div className="carousel-item">
-                        <img src={typescriptIcon} className="rounded-circle" width="100px" height="90"/>
+                        <img src={typescriptIcon} alt="skill-item" className="rounded-circle" width="100px" height="90" />
                     </div>
                     <div className="carousel-item">
-                        <img src={javascriptIcon} className="rounded-circle" width="100px" height="90px"/>
+                        <img src={javascriptIcon} alt="skill-item" className="rounded-circle" width="100px" height="90px" />
                     </div>
                     <div className="carousel-item">
-                        <img src={angularIcon} className="rounded-circle" width="100px" height="90px"/>
+                        <img src={angularIcon} alt="skill-item" className="rounded-circle" width="100px" height="90px" />
                     </div>
                     <div className="carousel-item">
-                        <img src={bootstrapIcon} className="rounded-circle" width="100px" height="90px"/>
+                        <img src={bootstrapIcon} alt="skill-item" className="rounded-circle" width="100px" height="90px" />
                     </div>
                     <div className="carousel-item">
-                        <img src={cssIcon} className="rounded-circle" width="100px" height="90px"/>
+                        <img src={cssIcon} alt="skill-item" className="rounded-circle" width="100px" height="90px" />
                     </div>
                     <div className="carousel-item">
-                        <img src={htmlIcon} className="rounded-circle" width="100px" height="90px"/>
+                        <img src={htmlIcon} alt="skill-item" className="rounded-circle" width="100px" height="90px" />
                     </div>
                     <div className="carousel-item">
-                        <img src={dockerIcon} className="rounded-circle" width="100px" height="90px"/>
+                        <img src={dockerIcon} alt="skill-item" className="rounded-circle" width="100px" height="90px" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

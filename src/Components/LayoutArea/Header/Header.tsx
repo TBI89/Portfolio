@@ -3,11 +3,11 @@ import "./Header.css";
 
 function Header(): JSX.Element {
 
-    const [displayedText, setDisplayedText] = useState<string>(""); // State for typing effect
-    const [randomContentState, setRandomContentState] = useState<string>(""); // State for random content
+    const [displayedText, setDisplayedText] = useState<string>(""); // State for typing effect.
+    const [randomContentState, setRandomContentState] = useState<string>(""); // State for random content.
     const [animate, setAnimate] = useState<boolean>(false);
 
-    // Initial content for typing effect
+    // Initial content for typing effect:
     const initialContent = "Hi, I'm Tomer. I'm super passionate about...";
     const content = ["web development", "creating top-notch apps", "expanding my tech stack", "problem solving"];
 
