@@ -12,8 +12,6 @@ function Contact(): JSX.Element {
     return (
         <div className="Contact">
 
-            <h3>Lets Get In Touch</h3>
-
             <div className="SocialLinks">
                 <a href={"https://www.linkedin.com/in/tomer-ben-israel"}
                     target="_blank" rel="noreferrer"><LinkedInIcon /> in/tomer-ben-israel</a>

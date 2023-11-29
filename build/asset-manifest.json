@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.489db4f6.css",
-    "main.js": "/static/js/main.84f60e9e.js",
+    "main.css": "/static/css/main.1d582b33.css",
+    "main.js": "/static/js/main.8504feea.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/fly-away-project-image.png": "/static/media/fly-away-project-image.786882eae99e2ccadd20.png",
+    "static/media/weather-in-your-pocket-project-image.png": "/static/media/weather-in-your-pocket-project-image.0a44e6d3b31750ba21b6.png",
     "static/media/smart-investing-project-image.png": "/static/media/smart-investing-project-image.ac9fe2209f3da65447cb.png",
-    "static/media/tranzuz-project-image.png": "/static/media/tranzuz-project-image.6cb2c02c3895eafd7846.png",
+    "static/media/tranzuz-project-image.png": "/static/media/tranzuz-project-image.bf44748961173f6272c7.png",
     "static/media/background-image.jpg": "/static/media/background-image.5f1551f0f6b3022d6d7d.jpg",
     "static/media/react-icon.png": "/static/media/react-icon.6bcffb56bd0efaa47767.png",
     "static/media/css-icon.png": "/static/media/css-icon.8a9cb64261d07da57f4f.png",
@@ -18,12 +19,12 @@
     "static/media/sql-icon.png": "/static/media/sql-icon.4676ad983d6bd3e9fac9.png",
     "static/media/mongo-icon.png": "/static/media/mongo-icon.940824112db2f1788f28.png",
     "index.html": "/index.html",
-    "main.489db4f6.css.map": "/static/css/main.489db4f6.css.map",
-    "main.84f60e9e.js.map": "/static/js/main.84f60e9e.js.map",
+    "main.1d582b33.css.map": "/static/css/main.1d582b33.css.map",
+    "main.8504feea.js.map": "/static/js/main.8504feea.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.489db4f6.css",
-    "static/js/main.84f60e9e.js"
+    "static/css/main.1d582b33.css",
+    "static/js/main.8504feea.js"
   ]
 }
