@@ -7,7 +7,7 @@
     width: 60px;
     border-radius: 20px;
     color: white;
-    background-color: rgba(0, 60, 50, 0.5);
+    background-color: rgba(0, 0, 255, 0.4);
     position: fixed;
     bottom: 5%;
     right: 5%;
@@ -32,12 +32,8 @@
     border-radius: 10px;
 }
 
-.navbar-toggler {
+.Menu>.navbar>.container-fluid>.navbar-toggler {
     background-color: rgba(0, 0, 255, 0.75);
-}
-
-.collapse {
-    color:  red;
 }
 
 @media (max-width: 767px) {
@@ -48,5 +44,11 @@
         justify-content: center;
         margin-bottom: 5px;
         max-width: 350px;
+    }
+
+    .Menu>.navbar>.container-fluid>.show {
+        background-color: rgba(0, 0, 100, 1);
+        border-radius: 10px;
+        margin-top: 10px;
     }
 }
