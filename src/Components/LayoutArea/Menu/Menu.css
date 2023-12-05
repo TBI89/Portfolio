@@ -19,9 +19,34 @@
     opacity: 1;
 }
 
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.Menu>.navbar>.container-fluid>.collapse>.navbar-nav>.nav-item>.active {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.navbar-toggler {
+    background-color: rgba(0, 0, 255, 0.75);
+}
+
+.collapse {
+    color:  red;
+}
+
 @media (max-width: 767px) {
 
-    .Menu>.ScrollToTopContainer {
-        margin-right: 40px;
+    .Contact>.SocialLinks>a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        max-width: 350px;
     }
 }

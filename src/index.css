@@ -3,7 +3,7 @@ body,
 #root {
     height: 100vh;
     text-align: center;
-    background-image: url(/src/Assets/Images/background-image.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
