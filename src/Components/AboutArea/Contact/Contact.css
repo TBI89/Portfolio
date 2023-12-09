@@ -17,10 +17,9 @@
 
     .Contact>.SocialLinks>a {
         display: flex;
-        flex-direction: row;
+        align-items: center;
         justify-content: center;
-        margin-left: 35px;
         margin-bottom: 5px;
-        max-width: 250px;
+        max-width: 350px;
     }
 }

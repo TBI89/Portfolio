@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff66ec48.css",
-    "main.js": "/static/js/main.8504feea.js",
+    "main.css": "/static/css/main.aa1fa10e.css",
+    "main.js": "/static/js/main.f96f9bf4.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/fly-away-project-image.png": "/static/media/fly-away-project-image.786882eae99e2ccadd20.png",
     "static/media/weather-in-your-pocket-project-image.png": "/static/media/weather-in-your-pocket-project-image.0a44e6d3b31750ba21b6.png",
     "static/media/smart-investing-project-image.png": "/static/media/smart-investing-project-image.ac9fe2209f3da65447cb.png",
     "static/media/tranzuz-project-image.png": "/static/media/tranzuz-project-image.bf44748961173f6272c7.png",
-    "static/media/background-image.jpg": "/static/media/background-image.5f1551f0f6b3022d6d7d.jpg",
+    "static/media/initial-header-font.ttf": "/static/media/initial-header-font.b7b2e2540b5bef48874b.ttf",
     "static/media/react-icon.png": "/static/media/react-icon.6bcffb56bd0efaa47767.png",
+    "static/media/random-content-font.ttf": "/static/media/random-content-font.3bc6a718ca288efebb2d.ttf",
     "static/media/css-icon.png": "/static/media/css-icon.8a9cb64261d07da57f4f.png",
     "static/media/bootstrap-icon.png": "/static/media/bootstrap-icon.f132cb791703420e69ca.png",
     "static/media/docker-icon.png": "/static/media/docker-icon.b6a94d2c9c38cfd2e1fa.png",
@@ -19,12 +20,12 @@
     "static/media/sql-icon.png": "/static/media/sql-icon.4676ad983d6bd3e9fac9.png",
     "static/media/mongo-icon.png": "/static/media/mongo-icon.940824112db2f1788f28.png",
     "index.html": "/index.html",
-    "main.ff66ec48.css.map": "/static/css/main.ff66ec48.css.map",
-    "main.8504feea.js.map": "/static/js/main.8504feea.js.map",
+    "main.aa1fa10e.css.map": "/static/css/main.aa1fa10e.css.map",
+    "main.f96f9bf4.js.map": "/static/js/main.f96f9bf4.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff66ec48.css",
-    "static/js/main.8504feea.js"
+    "static/css/main.aa1fa10e.css",
+    "static/js/main.f96f9bf4.js"
   ]
 }

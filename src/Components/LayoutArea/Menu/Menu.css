@@ -38,14 +38,6 @@
 
 @media (max-width: 767px) {
 
-    .Contact>.SocialLinks>a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 5px;
-        max-width: 350px;
-    }
-
     .Menu>.navbar>.container-fluid>.show {
         background-color: rgba(0, 0, 100, 1);
         border-radius: 10px;

@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "initial-header-font";
+    src: url(../../../Assets/Fonts/initial-header-font.ttf);
+}
+
+@font-face {
+    font-family: "random-content-font";
+    src: url(../../../Assets/Fonts/random-content-font.ttf);
+}
+
 .Header {
     white-space: nowrap;
     text-align: left;
@@ -13,13 +23,14 @@
 }
 
 .Header>.RandomContent>h1 {
-    color: white;
-    font-style: oblique;
+    color: blue;
+    font-family: "random-content-font";
 }
 
 .Header>.InitialContent>h1 {
     color: white;
     font-style: oblique;
+    font-family: "initial-header-font";
 }
 
 @keyframes headerAnimation {
