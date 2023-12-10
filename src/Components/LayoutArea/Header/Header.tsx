@@ -13,7 +13,7 @@ function Header(): JSX.Element {
         "I craft innovative digital solutions",
         "I drive digital excellence",
         "I transform ideas into digital experiences",
-        "I empower businesses through end-to-end web solutions"
+        "enable businesses with complete web solutions"
     ];
 
     useEffect(() => {

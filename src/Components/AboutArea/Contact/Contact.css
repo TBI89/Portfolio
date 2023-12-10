@@ -1,7 +1,3 @@
-.Contact>.SocialLinks {
-    margin-right: auto;
-}
-
 .Contact>.SocialLinks>a {
     margin: 0 20px;
     text-decoration: none;
@@ -16,10 +12,13 @@
 @media (max-width: 767px) {
 
     .Contact>.SocialLinks>a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 5px;
-        max-width: 350px;
+        display: block;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1300px) {
+
+    .Contact>.SocialLinks>a {
+        font-size: small;
     }
 }

@@ -1,11 +1,12 @@
-.About {
-    margin: 60px 0 60px 0;
-    max-width: 600px;
+.About>.carousel {
+    min-width: 300px;
+    max-width: 550px;
+    margin-bottom: 30px;
 }
 
 .About>h2 {
-    margin-bottom: 30px;
     text-align: left;
+    margin-bottom: 30px;
     color: white;
     font-style: oblique;
 }
@@ -13,18 +14,28 @@
 @media (max-width: 767px) {
 
     .About {
-        width: 320px;
-        height: 200px;
+        display: grid;
+        justify-content: center;
     }
 
-    .About>img {
-        max-width: 65%;
-        margin-left: -50px;
+    .About>.carousel {
+        max-width: 300px;
+        margin-right: 120px;
     }
 
     .About>h2 {
         margin-left: 80px;
-        margin-top: 50px;
-        max-width: 250px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1300px) {
+
+    .About {
+        display: grid;
+        justify-content: center;
+    }
+
+    .About>h2 {
+        margin-right: 350px;
     }
 }

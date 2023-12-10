@@ -7,6 +7,11 @@
 
 @media (max-width: 767px) {
 
+    .ProjectList {
+        display: grid;
+        justify-content: center;
+    }
+
     .ProjectList>h2 {
         margin-left: 200px;
         max-width: 150px;
@@ -14,5 +19,13 @@
 
     .ProjectList {
         margin-left: -110px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1300px) {
+    
+    .ProjectList {
+        display: grid;
+        justify-content: center;
     }
 }

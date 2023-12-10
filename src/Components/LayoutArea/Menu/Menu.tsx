@@ -34,7 +34,7 @@ function Menu(props: MenuProps): JSX.Element {
     return (
         <div className="Menu">
 
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar navbar-expand-sm">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span className="navbar-toggler-icon"></span>

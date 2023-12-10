@@ -26,15 +26,29 @@
     box-shadow: 2px 4px 6px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
 
     .ProjectCard>.ProjectLink>.ProjectImageContainer>.ProjectImage {
-        width: 45%;
+        width: 50%;
     }
 
     .ProjectCard>.ProjectLink>.ProjectInfoContainer {
         font-size: 7px;
-        margin-left: 155px;
+        margin-left: 140px;
         margin-top: 12px;
     }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+
+    .ProjectCard>.ProjectLink>.ProjectImageContainer>.ProjectImage {
+        width: 75%;
+    }
+
+    .ProjectCard>.ProjectLink>.ProjectInfoContainer {
+        font-size: 7px;
+        margin-left: 80px;
+        margin-top: 12px;
+    }
+    
 }
