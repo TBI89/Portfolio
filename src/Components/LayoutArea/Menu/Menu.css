@@ -38,7 +38,7 @@
 
 @media (max-width: 767px) {
 
-    .Menu>.navbar>.container-fluid>.show {
+    .Menu>.navbar>.container-fluid>.navbar-collapse {
         background-color: rgba(0, 0, 100, 1);
         border-radius: 10px;
         margin-top: 10px;
