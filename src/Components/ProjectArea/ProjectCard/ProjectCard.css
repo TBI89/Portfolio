@@ -20,7 +20,7 @@
 }
 
 .ProjectCard>.ProjectLink>.ProjectImageContainer>.ProjectImage {
-    width: 550px;
+    width: 530px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 2px 4px 6px;
@@ -28,26 +28,34 @@
 
 @media (max-width: 575px) {
 
+    .ProjectCard {
+        width: 90%;
+    }
+
     .ProjectCard>.ProjectLink>.ProjectImageContainer>.ProjectImage {
-        width: 50%;
+        width: 80%;
     }
 
     .ProjectCard>.ProjectLink>.ProjectInfoContainer {
-        font-size: 7px;
-        margin-left: 140px;
+        font-size: 15px;
+        margin-left: 50px;
         margin-top: 12px;
     }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
 
+    .ProjectCard {
+        width: 90%;
+    }
+
     .ProjectCard>.ProjectLink>.ProjectImageContainer>.ProjectImage {
-        width: 75%;
+        width: 80%;
     }
 
     .ProjectCard>.ProjectLink>.ProjectInfoContainer {
-        font-size: 7px;
-        margin-left: 80px;
+        font-size: 15px;
+        margin-left: 70px;
         margin-top: 12px;
     }
     

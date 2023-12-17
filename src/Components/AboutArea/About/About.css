@@ -16,6 +16,7 @@
     .About {
         display: grid;
         justify-content: center;
+        margin-left: 75px;
     }
 
     .About>.carousel {

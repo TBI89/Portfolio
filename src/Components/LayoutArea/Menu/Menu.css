@@ -36,7 +36,7 @@
     background-color: rgba(0, 0, 255, 0.75);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
 
     .Menu>.navbar>.container-fluid>.navbar-collapse {
         background-color: rgba(0, 0, 100, 1);

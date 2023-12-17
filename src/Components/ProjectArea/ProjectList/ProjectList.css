@@ -1,31 +1,32 @@
 .ProjectList>h2 {
-    text-align: left;
     color: white;
     font-style: oblique;
     margin-top: 660px;
+    text-align: left;
 }
 
-@media (max-width: 767px) {
-
-    .ProjectList {
-        display: grid;
-        justify-content: center;
+@media (max-width: 575px) {
+    .ProjectList>h2 {
+        text-align: center;
     }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
 
     .ProjectList>h2 {
-        margin-left: 200px;
-        max-width: 150px;
+        text-align: center;
+        margin-right: 50px;
     }
+}
 
+@media (min-width: 675px) and (max-width: 767px) {
     .ProjectList {
-        margin-left: -110px;
+        margin-left: 50px;
     }
 }
 
 @media (min-width: 767px) and (max-width: 1300px) {
-    
     .ProjectList {
-        display: grid;
-        justify-content: center;
+        margin-left: 15%;
     }
 }
