@@ -20,6 +20,10 @@
         white-space: initial;
         padding: 20px 150px 0 20px;
     }
+    .HeaderImageContainer>img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (min-width: 575px) and (max-width: 1300px) {
@@ -27,14 +31,22 @@
         white-space: initial;
         padding-left: 20px;
     }
+    .HeaderImageContainer>img {
+        width: 90%;
+        height: auto;
+    }
 }
 
-.Header>.RandomContent>h1 {
+.Header>.ContentWrapper {
+    height: 180px;
+}
+
+.Header>.ContentWrapper>.RandomContent>h1 {
     color: blue;
     font-family: "random-content-font";
 }
 
-.Header>.InitialContent>h1 {
+.Header>.ContentWrapper>.InitialContent>h1 {
     color: white;
     font-style: oblique;
     font-family: "initial-header-font";
@@ -55,3 +67,5 @@
 .randomContentAnimation {
     animation: headerAnimation 1.5s ease;
 }
+
+.HeaderImageContainer {}

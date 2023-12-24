@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
+import headerImage from "../../../Assets/Images/header-image.png";
 
 function Header(): JSX.Element {
 
@@ -49,12 +50,20 @@ function Header(): JSX.Element {
 
     return (
         <div className="Header">
-            <div className="InitialContent">
-                <h1>{displayedText}</h1>
+
+            <div className="ContentWrapper">
+                <div className="InitialContent">
+                    <h1>{displayedText}</h1>
+                </div>
+                <div className={`RandomContent ${animate ? 'randomContentAnimation' : ''}`}>
+                    <h1>{randomContentState}</h1>
+                </div>
             </div>
-            <div className={`RandomContent ${animate ? 'randomContentAnimation' : ''}`}>
-                <h1>{randomContentState}</h1>
+
+            <div className="HeaderImageContainer">
+                <img src={headerImage} />
             </div>
+
         </div>
     );
 }

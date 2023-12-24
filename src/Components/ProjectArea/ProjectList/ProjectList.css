@@ -1,13 +1,14 @@
 .ProjectList>h2 {
     color: white;
     font-style: oblique;
-    margin-top: 660px;
     text-align: left;
+    margin-top:1000px;
 }
 
 @media (max-width: 575px) {
     .ProjectList>h2 {
         text-align: center;
+        margin-top: 100px;
     }
 }
 
@@ -16,6 +17,7 @@
     .ProjectList>h2 {
         text-align: center;
         margin-right: 50px;
+        margin-top: 100px;
     }
 }
 
@@ -28,5 +30,8 @@
 @media (min-width: 767px) and (max-width: 1300px) {
     .ProjectList {
         margin-left: 15%;
+    }
+    .ProjectList>h2 {
+        margin-top: 150px;
     }
 }
