@@ -9,6 +9,12 @@
     color: lightblue;
 }
 
+@media (max-width: 500px) {
+    .Contact {
+        margin-right: 100px;
+    }
+}
+
 @media (max-width: 767px) {
 
     .Contact>.SocialLinks>a {

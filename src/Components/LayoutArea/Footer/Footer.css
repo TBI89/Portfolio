@@ -6,6 +6,12 @@
     color: gray;
 }
 
+@media (max-width: 500px) {
+    .Footer {
+        margin-left: -80px;
+    }
+}
+
 @media (max-width: 767px) {
 
     .Footer {

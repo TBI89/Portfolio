@@ -8,3 +8,12 @@ body,
     background-size: cover;
     background-attachment: fixed;
 }
+
+@media (max-width: 767px) {
+
+    html,
+    body,
+    #root {
+        overflow-x: hidden;
+    }
+}

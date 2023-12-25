@@ -36,6 +36,12 @@
     background-color: rgba(0, 0, 255, 0.75);
 }
 
+@media (max-width: 485px) {
+    .Menu>.navbar>.container-fluid>.navbar-collapse {
+        margin-right: 100px;
+    }
+}
+
 @media (max-width: 575px) {
 
     .Menu>.navbar>.container-fluid>.navbar-collapse {
