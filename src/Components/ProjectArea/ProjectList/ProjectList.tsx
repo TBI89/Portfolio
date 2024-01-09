@@ -1,21 +1,21 @@
+import bootstrapIcon from "../../../Assets/Images/bootstrap-icon.png";
+import cssIcon from "../../../Assets/Images/css-icon.png";
+import dockerIcon from "../../../Assets/Images/docker-icon.png";
 import flyAwayProjectImage from "../../../Assets/Images/fly-away-project-image.png";
+import htmlIcon from "../../../Assets/Images/html-icon.png";
+import javascriptIcon from "../../../Assets/Images/javascript-icon.png";
+import mongoIcon from "../../../Assets/Images/mongo-icon.png";
+import nodeIcon from "../../../Assets/Images/node-icon.png";
+import reactIcon from "../../../Assets/Images/react-icon.png";
 import smartInvestingProjectImage from "../../../Assets/Images/smart-investing-project-image.png";
+import sqlIcon from "../../../Assets/Images/sql-icon.png";
 import tranzuzProjectImage from "../../../Assets/Images/tranzuz-project-image.png";
+import typescriptIcon from "../../../Assets/Images/typescript-icon.png";
 import weatherInYourPocketProjectImage from "../../../Assets/Images/weather-in-your-pocket-project-image.png";
 import ProjectModel from "../../../Models/ProjectModel";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import "./ProjectList.css";
-import reactIcon from "../../../Assets/Images/react-icon.png";
-import nodeIcon from "../../../Assets/Images/node-icon.png";
-import mongoIcon from "../../../Assets/Images/mongo-icon.png";
-import sqlIcon from "../../../Assets/Images/sql-icon.png";
-import typescriptIcon from "../../../Assets/Images/typescript-icon.png";
-import javascriptIcon from "../../../Assets/Images/javascript-icon.png";
-import angularIcon from "../../../Assets/Images/angular-icon.png";
-import bootstrapIcon from "../../../Assets/Images/bootstrap-icon.png";
-import cssIcon from "../../../Assets/Images/css-icon.png";
-import htmlIcon from "../../../Assets/Images/html-icon.png";
-import dockerIcon from "../../../Assets/Images/docker-icon.png";
+import tubroTexterProjectImage from "../../../Assets/Images/turbo-texter-project-image.png";
 
 function ProjectList(): JSX.Element {
 
@@ -50,6 +50,14 @@ function ProjectList(): JSX.Element {
             url: "https://weather-in-my-pocket.web.app/home/tel-aviv",
             description: "An application for displaying and monitoring worldwide weather conditions with an intuitive and simple interface",
             tags: [typescriptIcon, reactIcon, bootstrapIcon]
+        },
+        {
+            id: 5,
+            name: "Turbo Texter",
+            imageName: tubroTexterProjectImage,
+            url: "https://turbo-texter.web.app/",
+            description: "A fun typing speed test game. monitor your WPM, CPM, and accuracy. After the test, enjoy superhero-themed feedback and share your results!",
+            tags: [typescriptIcon, reactIcon, htmlIcon, cssIcon, bootstrapIcon]
         }
     ];
 
